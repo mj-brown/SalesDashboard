@@ -1,4 +1,4 @@
-import { tokens } from "../theme";
+//import { tokens } from "../theme";
 
 
 
@@ -55,7 +55,7 @@ export const mockTransactions = [
     cost: "133.45",
   },
 ];
-
+/*
 export const mockBarData = [
   {
     country: "AD",
@@ -918,3 +918,4 @@ export const mockGeographyData = [
     value: 171135,
   },
 ];
+*/
