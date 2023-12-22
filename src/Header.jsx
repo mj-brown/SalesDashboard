@@ -2,9 +2,9 @@ function Header() {
 
     return (
         <header>
-            <h1>The Pau Hana Diner</h1>
-            <h2>Dashboard</h2>
-            <h3>Welcome to your dashboard</h3>
+            <br/>
+            <h1>Dashboard</h1>
+            <h2>Welcome to your dashboard</h2>
         </header>
     )
 

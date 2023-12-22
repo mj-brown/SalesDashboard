@@ -15,7 +15,7 @@ const bull = (
   </Box>
 );
 
-const Revenue = () => {
+const Clients = () => {
     return (
         <Card sx={{ minWidth: 275 }}>
           <CardContent>
@@ -41,4 +41,4 @@ const Revenue = () => {
       );
 }
 
-export default Revenue;
+export default Clients;

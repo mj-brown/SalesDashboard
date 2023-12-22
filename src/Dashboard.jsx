@@ -4,6 +4,9 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Header from "./Header";
+import KPI from './KPI';
+import Revenue from './Revenue';
+import Transactions from './Transactions';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,16 +21,16 @@ const Dashboard = () => {
         <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Header />
+          <Item><Header /></Item>
         </Grid>
         <Grid item xs={12}>
-          <Item>xs=4</Item>
+          <Item><KPI /></Item>
         </Grid>
         <Grid item xs={8}>
-          <Item>xs=4</Item>
+          <Item><Revenue /></Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>xs=8</Item>
+          <Item><Transactions /></Item>
         </Grid>
       </Grid>
     </Box>
