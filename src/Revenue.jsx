@@ -1,4 +1,3 @@
-import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -20,7 +19,15 @@ const calculateTotalRevenue = (transactions) => {
 const Revenue = () => {
   const totalRevenue = calculateTotalRevenue(mockTransactions);
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card 
+    sx={{
+      minWidth: '275px',
+      height: '340px', // Set the height to 300px
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between', // Space between the content and the edges
+    }}
+    >
       <CardContent>
         <CurrencyExchangeIcon />
         <Typography variant="h5" component="div">

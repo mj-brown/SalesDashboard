@@ -1,4 +1,4 @@
-import { tokens } from '@mui/material/styles';
+
 
 export const mockTransactions = [
   {
@@ -134,7 +134,6 @@ export const mockBarData = [
 export const mockLineData = [
   {
     id: "weekdays",
-    color: tokens("dark").greenAccent[500],
     data: [
       {
         x: "donut",
@@ -165,7 +164,6 @@ export const mockLineData = [
   },
    {
      id: "weekends",
-     color: tokens("dark").blueAccent[300],
      data: [
        {
          x: "donut",
@@ -196,7 +194,6 @@ export const mockLineData = [
    },
   {
     id: "holidays",
-    color: tokens("dark").redAccent[200],
     data: [
       {
         x: "donut",

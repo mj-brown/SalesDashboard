@@ -1,4 +1,3 @@
-import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -17,7 +16,12 @@ const Transactions = () => {
       <Typography variant="h5" gutterBottom>
         Transactions
       </Typography>
-      <List>
+      <List
+        sx={{
+          maxHeight: '300px', // Set your desired height
+          overflowY: 'auto', // Add a scrollbar when content overflows
+        }}
+      >
         {transactions.map((transaction) => (
           <ListItem key={transaction.txId}>
             <ListItemText
