@@ -1,9 +1,4 @@
-//import { tokens } from "../theme";
-
-
-
-
-
+import { tokens } from '@mui/material/styles';
 
 export const mockTransactions = [
   {
@@ -55,7 +50,7 @@ export const mockTransactions = [
     cost: "133.45",
   },
 ];
-/*
+
 export const mockBarData = [
   {
     country: "AD",
@@ -918,4 +913,3 @@ export const mockGeographyData = [
     value: 171135,
   },
 ];
-*/
