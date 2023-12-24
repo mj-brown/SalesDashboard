@@ -95,7 +95,7 @@ const Sidebar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            The Pau Hana Diner
+            The Pau Hana Bar & Diner
           </Typography>
         </Toolbar>
       </AppBar>
