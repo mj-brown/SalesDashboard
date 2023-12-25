@@ -1,7 +1,7 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
+import MonetizationOnTwoToneIcon from "@mui/icons-material/MonetizationOnTwoTone";
 import { mockTransactions } from "../mockData";
 
 const calculateTotalRevenue = (transactions) => {
@@ -15,25 +15,48 @@ const calculateTotalRevenue = (transactions) => {
   return totalRevenue.toFixed(2);
 };
 
-
 const Revenue = () => {
   const totalRevenue = calculateTotalRevenue(mockTransactions);
   return (
-    <Card 
-    sx={{
-      minWidth: '275px',
-      height: '340px', // Set the height to 300px
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between', // Space between the content and the edges
-    }}
+    <Card
+      sx={{
+        minWidth: "275px",
+        height: "340px", // Set the height to 300px
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "top",
+        alignItems: "flex-start",
+        textAlign: "left",
+        padding: "20px 30px",
+        border: "4px solid #044778",
+        boxShadow: "2px 2px 4px #000000",
+      }}
     >
       <CardContent>
-        <CurrencyExchangeIcon />
-        <Typography variant="h5" component="div">
+        <MonetizationOnTwoToneIcon
+          sx={{
+            margin: "5px 0px",
+          }}
+        />
+        <Typography
+          variant="h5"
+          component="div"
+          sx={{
+            fontWeight: "bolder",
+            fontSize: "2rem",
+            color: "#044778",
+          }}
+        >
           {`$${totalRevenue}`}
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography
+          sx={{
+            mb: 1.5,
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+          }}
+          color="text.secondary"
+        >
           Revenue Generated
         </Typography>
       </CardContent>

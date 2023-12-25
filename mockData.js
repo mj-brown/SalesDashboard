@@ -1,5 +1,3 @@
-
-
 export const mockTransactions = [
   {
     txId: "01e4dsa",
@@ -158,40 +156,38 @@ export const mockLineData = [
       {
         x: "burger",
         y: 236,
-      }
-     
+      },
     ],
   },
-   {
-     id: "weekends",
-     data: [
-       {
-         x: "donut",
-         y: 212,
-       },
-       { 
+  {
+    id: "weekends",
+    data: [
+      {
+        x: "donut",
+        y: 212,
+      },
+      {
         x: "sandwich",
-         y: 190,
-       },
-       {
-         x: "fries",
-         y: 270,
-       },
-       {
-         x: "kebab",
-         y: 9,
-       },
-       {
-         x: "hotdog",
-         y: 75,
-       },
-       {
-         x: "burger",
-         y: 175,
-       }
-
-     ],
-   },
+        y: 190,
+      },
+      {
+        x: "fries",
+        y: 270,
+      },
+      {
+        x: "kebab",
+        y: 9,
+      },
+      {
+        x: "hotdog",
+        y: 75,
+      },
+      {
+        x: "burger",
+        y: 175,
+      },
+    ],
+  },
   {
     id: "holidays",
     data: [
@@ -218,11 +214,10 @@ export const mockLineData = [
       {
         x: "burger",
         y: 152,
-      }
-
-     ],
-   },
- ];
+      },
+    ],
+  },
+];
 
 export const mockGeographyData = [
   {

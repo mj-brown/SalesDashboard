@@ -1,41 +1,59 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import SignpostIcon from '@mui/icons-material/Signpost';
-import { mockTransactions } from '../mockData';
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import SignpostTwoToneIcon from "@mui/icons-material/SignpostTwoTone";
+import { mockTransactions } from "../mockData";
 
 const calculateTraffic = () => {
   const totalTraffic = mockTransactions.length;
 
   return totalTraffic;
-}
+};
 
 const Traffic = () => {
   const totalTraffic = calculateTraffic();
-    return (
-        <Card 
+  return (
+    <Box
+      sx={{
+        minWidth: "275px",
+        height: "200px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "flex-start",
+        padding: "20px 30px",
+        border: "4px solid #044778",
+        boxShadow: "2px 2px 4px #000000",
+      }}
+    >
+      <SignpostTwoToneIcon
         sx={{
-          minWidth: '275px',
-          height: '200px', // Set the height to 300px
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between', // Space between the content and the edges
+          margin: "5px 0px",
         }}
-        >
-          <CardContent>
-            <SignpostIcon />
-                
-            <Typography variant="h5" component="div">
-              {totalTraffic}
-            </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              Traffic Received
-            </Typography>
-            
-          </CardContent>
-          
-        </Card>
-      );
-}
+      />
+
+      <Typography
+        variant="h5"
+        component="div"
+        sx={{
+          fontWeight: "900",
+          fontSize: "2rem",
+          color: "#044778",
+        }}
+      >
+        {totalTraffic}
+      </Typography>
+      <Typography
+        sx={{
+          mb: 1.5,
+          fontWeight: "bold",
+          fontSize: "1.2rem",
+        }}
+        color="text.secondary"
+      >
+        Traffic Received
+      </Typography>
+    </Box>
+  );
+};
 
 export default Traffic;
